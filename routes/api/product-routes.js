@@ -48,21 +48,6 @@ router.post('/', async (req, res) => {
       tagIds: [1, 2, 3, 4]
     }
   */
-		// try{
-		// 	const productLocationData = await Product.create({
-		// 		category_id: {
-		// 			product_name: "Basketball",
-		// 			price: 200.00,
-		// 			stock: 3,
-		// 			tagIds: [1, 2, 3, 4]
-		// 		}.category_id
-		// 	});
-		// 	res.status(200).json(productLocationData);
-		// } catch (err) {
-		// 	res.status(400).json(err);
-		// }
-
-
   await Product.create(req.body)
     .then((product) => {
       // if there's product tags, we need to create pairings to bulk create in the ProductTag model
@@ -122,7 +107,7 @@ router.put('/:id', async (req, res) => {
     })
     .then((updatedProductTags) => res.json(updatedProductTags))
     .catch((err) => {
-      // console.log(err);
+      console.log(err);
       res.status(400).json(err);
     });
 });
