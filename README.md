@@ -1,5 +1,10 @@
 # E-commerce Back End Starter Code
 
+![HTML](https://img.shields.io/badge/-NODE-orange) ![JS](https://img.shields.io/badge/-JS-yellow) ![Node](https://img.shields.io/badge/-MySQL2-darkgreen) ![Sequelize](https://img.shields.io/badge/-Sequelize-blue)
+
+## Description
+This particular e-commerce application was created utilizing a starter code to establish a back-end system for an e-commerce website. It incorporates the command line interface (CLI) and object-relational mapping to execute various techniques for managing, storing, and retrieving data using HTTP methods through a RESTful API. To construct a back end for a shop's website, Express.js API is utilized, which interacts with a MySQL database using Sequelize.
+
 # User Story
 AS A manager at an internet retail company<br/>
 I WANT a back end for my e-commerce website that uses the latest technologies<br/>
